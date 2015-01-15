@@ -5,20 +5,20 @@
       <tracerFactory metricName="Mongo">
          <match assemblyName="MongoDB.Driver" className="MongoDB.Driver.MongoCollection">
             <exactMethodMatcher methodName="Insert" />
-			<exactMethodMatcher methodName="FindAs" />
+            <exactMethodMatcher methodName="FindAs" />
             <exactMethodMatcher methodName="FindOneAs" />
             <exactMethodMatcher methodName="FindAllAs" />
             <exactMethodMatcher methodName="FindAndModify" />
             <exactMethodMatcher methodName="Remove" />
             <exactMethodMatcher methodName="Update" />
-			<exactMethodMatcher methodName="Group" />
-			<exactMethodMatcher methodName="Save" />
+            <exactMethodMatcher methodName="Group" />
+            <exactMethodMatcher methodName="Save" />
          </match>
-		 <match assemblyName="MongoDB.Driver" className="MongoDB.Driver.GridFS">
+         <match assemblyName="MongoDB.Driver" className="MongoDB.Driver.GridFS">
             <exactMethodMatcher methodName="Upload" />
-			<exactMethodMatcher methodName="FindOne" />
-			<exactMethodMatcher methodName="DeleteById" />
-		</match>
+            <exactMethodMatcher methodName="FindOne" />
+            <exactMethodMatcher methodName="DeleteById" />
+         </match>
       </tracerFactory>
    </instrumentation>
 </extension>
