@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension xmlns="urn:newrelic-extension">
    <instrumentation>
-      <!-- instrument MongoDB.Driver.MongoCollection -->
+      <!-- instrument MongoDB.Driver.MongoCollection and MongoDB.Driver.GridFS -->
       <tracerFactory metricName="Mongo">
          <match assemblyName="MongoDB.Driver" className="MongoDB.Driver.MongoCollection">
             <exactMethodMatcher methodName="Insert" />
